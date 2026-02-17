@@ -70,3 +70,7 @@
 - [x] Update frontend auth flow to use custom login/register forms
 - [x] Remove all Manus references from code, env, and config
 - [x] Make website fully independent and deployable anywhere (Vercel, etc.)
+- [x] Clean up vite.config.ts — remove Manus debug plugin, Manus runtime plugin, Manus allowed hosts
+- [x] Clean up package.json — remove Manus-specific dev dependencies
+- [x] Write comprehensive README.md with Vercel deployment instructions
+- [x] Ensure project is fully Vercel-compatible (vercel.json created)
