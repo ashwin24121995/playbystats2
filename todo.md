@@ -61,3 +61,4 @@
 - [x] Add FAQ section to the Home page
 - [x] Rewrite About page with "What We Offer", "Who We Are", "User-Friendly", "Easy & Transparent" sections
 - [x] Add "What We Offer" section to the Home page
+- [x] Restore Home page to the previous good version (before What We Offer and FAQ additions)

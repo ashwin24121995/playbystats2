@@ -269,72 +269,9 @@ export default function Home() {
             ))}
           </motion.div>
         </div>
-      </section>      {/* ─── What We Offer ───────────────────────────────────── */}
-      <section className="py-16 lg:py-24 bg-muted/30">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-14"
-          >
-            <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-              What We Offer
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ fontFamily: "var(--font-heading)" }}>
-              A Complete Cricket Entertainment Experience
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              Everything you need to enjoy cricket — all in one place, all completely free.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { icon: Users, title: "Team Building", desc: "Select 11 players from match squads within a 100-credit budget. Choose from batsmen, bowlers, all-rounders, and wicket-keepers to build your ideal team.", color: "bg-blue-50 text-blue-600" },
-              { icon: Trophy, title: "Free Contests", desc: "Join contests for every match with zero entry fees. Compete with other cricket enthusiasts and see how your team performs.", color: "bg-yellow-50 text-yellow-600" },
-              { icon: BarChart3, title: "Live Scoring", desc: "Track your team's performance in real-time with our comprehensive scoring system. Watch your points update as the match progresses.", color: "bg-green-50 text-green-600" },
-              { icon: Award, title: "Leaderboards", desc: "Climb the rankings and earn bragging rights. Our leaderboards track performance across matches so you can see how you stack up.", color: "bg-purple-50 text-purple-600" },
-              { icon: BookOpen, title: "Learning Resources", desc: "Access how-to-play guides, strategy tutorials, player analysis tips, and cricket knowledge resources to improve your understanding.", color: "bg-orange-50 text-orange-600" },
-              { icon: Target, title: "Detailed Analytics", desc: "Get comprehensive performance analytics for your teams. Track your strengths, identify patterns, and refine your strategy over time.", color: "bg-red-50 text-red-600" },
-            ].map((item, i) => (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
-              >
-                <Card className="h-full border-border/50 hover:border-primary/20 hover:shadow-lg transition-all duration-300 group">
-                  <CardContent className="p-6">
-                    <div className={`w-12 h-12 rounded-xl ${item.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                      <item.icon className="w-6 h-6" />
-                    </div>
-                    <h3 className="text-lg font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>{item.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mt-10"
-          >
-            <Link href="/about">
-              <Button variant="outline" className="rounded-full">
-                Learn More About Us
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </Link>
-          </motion.div>
-        </div>
       </section>
 
-      {/* Features Section */}
+      {/* ─── Features Section ─────────────────────────────────────────── */}
       <section className="py-16 lg:py-24">
         <div className="container">
           <motion.div
