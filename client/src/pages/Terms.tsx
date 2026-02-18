@@ -90,7 +90,7 @@ export default function Terms() {
 
               <div>
                 <h2 className="text-xl font-bold text-foreground mb-3" style={{ fontFamily: "var(--font-heading)" }}>11. Governing Law</h2>
-                <p>These Terms shall be governed by and construed in accordance with the laws of India. Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the courts in Karnataka, India.</p>
+                <p>These Terms shall be governed by and construed in accordance with the laws of India. Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the courts in Mumbai, Maharashtra, India.</p>
               </div>
 
               <div>
@@ -98,8 +98,9 @@ export default function Terms() {
                 <p>If you have any questions about these Terms, please contact us at:</p>
                 <ul className="list-none mt-2 space-y-1">
                   <li><strong className="text-foreground">Email:</strong> support@squadmastersports.com</li>
+                  <li><strong className="text-foreground">Phone:</strong> 1800-000-5533</li>
                   <li><strong className="text-foreground">Website:</strong> squadmastersports.com</li>
-                  <li><strong className="text-foreground">Location:</strong> Karnataka, India</li>
+                  <li><strong className="text-foreground">Address:</strong> 3rd Floor, Crystal Point Mall, Link Road, Andheri West, Mumbai, Maharashtra 400053, India</li>
                 </ul>
               </div>
             </div>

@@ -48,7 +48,9 @@ export default function Refund() {
               <p>If you have any questions about this policy, please contact us at:</p>
               <ul className="list-none mt-2 space-y-1">
                 <li><strong className="text-foreground">Email:</strong> support@squadmastersports.com</li>
+                <li><strong className="text-foreground">Phone:</strong> 1800-000-5533</li>
                 <li><strong className="text-foreground">Website:</strong> squadmastersports.com</li>
+                <li><strong className="text-foreground">Address:</strong> 3rd Floor, Crystal Point Mall, Link Road, Andheri West, Mumbai, Maharashtra 400053, India</li>
               </ul>
             </div>
           </motion.div>

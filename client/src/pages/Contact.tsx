@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, MapPin, Clock, Send } from "lucide-react";
+import { Mail, MapPin, Clock, Send, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -48,8 +48,8 @@ export default function Contact() {
                 <div className="space-y-4">
                   {[
                     { icon: Mail, label: "Email Support", value: "support@squadmastersports.com", href: "mailto:support@squadmastersports.com" },
-
-                    { icon: MapPin, label: "Location", value: "Karnataka, India", href: undefined },
+                    { icon: Phone, label: "Phone Support", value: "1800-000-5533", href: "tel:18000005533" },
+                    { icon: MapPin, label: "Location", value: "3rd Floor, Crystal Point Mall, Link Road, Andheri West, Mumbai, Maharashtra 400053, India", href: undefined },
                     { icon: Clock, label: "Response Time", value: "Within 24 hours", href: undefined },
                   ].map((item, i) => (
                     <Card key={item.label} className="border-border/50 hover:shadow-sm transition-shadow">

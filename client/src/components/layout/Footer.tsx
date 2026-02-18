@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Mail, MapPin, Trophy } from "lucide-react";
+import { Mail, MapPin, Trophy, Phone } from "lucide-react";
 
 const footerLinks = {
   platform: [
@@ -54,10 +54,13 @@ export default function Footer() {
                 <Mail className="w-4 h-4 shrink-0" />
                 support@squadmastersports.com
               </a>
-
+              <a href="tel:18000005533" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
+                <Phone className="w-4 h-4 shrink-0" />
+                1800-000-5533
+              </a>
               <div className="flex items-start gap-2 text-sm text-background/60">
                 <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
-                <span>Karnataka, India</span>
+                <span>3rd Floor, Crystal Point Mall, Link Road, Andheri West, Mumbai, Maharashtra 400053, India</span>
               </div>
             </div>
           </div>
