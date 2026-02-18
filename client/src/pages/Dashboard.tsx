@@ -18,10 +18,10 @@ const demoStats = {
 };
 
 const recentTeams = [
-  { id: 1, matchName: "MI vs CSK", tournament: "IPL 2026", points: 186, rank: 12, date: "Mar 22, 2026" },
-  { id: 2, matchName: "RCB vs KKR", tournament: "IPL 2026", points: 214, rank: 5, date: "Mar 23, 2026" },
-  { id: 3, matchName: "DC vs RR", tournament: "IPL 2026", points: 142, rank: 28, date: "Mar 24, 2026" },
-  { id: 4, matchName: "IND vs AUS", tournament: "ICC Champions Trophy", points: 198, rank: 8, date: "Mar 28, 2026" },
+  { id: 1, matchName: "MS vs CC", tournament: "PCL 2026", points: 186, rank: 12, date: "Mar 22, 2026" },
+  { id: 2, matchName: "BW vs KT", tournament: "PCL 2026", points: 214, rank: 5, date: "Mar 23, 2026" },
+  { id: 3, matchName: "DD vs RG", tournament: "PCL 2026", points: 142, rank: 28, date: "Mar 24, 2026" },
+  { id: 4, matchName: "IND vs AUS", tournament: "ICC Championship 2026", points: 198, rank: 8, date: "Mar 28, 2026" },
 ];
 
 export default function Dashboard() {

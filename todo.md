@@ -79,3 +79,4 @@
 - [x] Update company address to "3rd Floor, Crystal Point Mall, Link Road, Andheri West, Mumbai, Maharashtra 400053, India" everywhere
 - [x] Update contact number to "1800-000-5533" everywhere
 - [x] Remove Dashboard link from footer
+- [x] Review and remove all brand names, celebrity names, and external references from website content
