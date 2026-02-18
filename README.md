@@ -57,6 +57,8 @@ The platform uses **no external APIs or databases** — all data is stored in lo
 
 ```
 squad-master-sports/
+├── api/                       # Vercel serverless function entry
+│   └── index.ts               # Express app exported for Vercel
 ├── client/                    # Frontend (React + Vite)
 │   ├── public/                # Static assets
 │   ├── src/
@@ -75,21 +77,18 @@ squad-master-sports/
 │   └── index.html             # HTML template with meta tags
 ├── server/
 │   ├── _core/                 # Server framework (Express, tRPC, Vite)
-│   │   ├── index.ts           # Server entry point
+│   │   ├── index.ts           # Server entry point (local dev)
 │   │   ├── context.ts         # tRPC context with JWT auth
 │   │   ├── trpc.ts            # tRPC procedures
 │   │   ├── cookies.ts         # Cookie configuration
 │   │   └── vite.ts            # Vite dev server integration
 │   ├── data/                  # JSON data files (auto-created)
-│   │   ├── users.json         # User accounts
-│   │   ├── teams.json         # Created teams
-│   │   ├── contest_entries.json
-│   │   └── contact_messages.json
 │   ├── fileStore.ts           # File-based CRUD operations
 │   ├── routers.ts             # All tRPC API routes
 │   ├── app.test.ts            # API tests
 │   └── auth.logout.test.ts    # Auth logout test
 ├── shared/                    # Shared types & constants
+├── vercel.json                # Vercel deployment configuration
 ├── package.json
 ├── vite.config.ts
 ├── tsconfig.json
@@ -157,7 +156,7 @@ squad-master-sports/
 
 ## Data Storage
 
-The application uses **JSON file-based storage** instead of a traditional database. All data files are stored in `server/data/` and are auto-created on first use.
+The application uses **JSON file-based storage** instead of a traditional database. All data files are stored in `server/data/` (local) or `/tmp/squad-master-data/` (Vercel) and are auto-created on first use.
 
 | File                     | Contents                        |
 |--------------------------|---------------------------------|
@@ -167,6 +166,8 @@ The application uses **JSON file-based storage** instead of a traditional databa
 | `contact_messages.json`  | Contact form submissions        |
 
 The frontend uses **static data** from `client/src/data/staticData.ts` for matches, players, contests, leaderboard rankings, scoring rules, and FAQs. This means the app works without any external API.
+
+**Note:** On Vercel, the `/tmp` directory is ephemeral — data resets between cold starts. For persistent data in production, consider migrating to a cloud database (e.g., Supabase, PlanetScale, or Vercel Postgres).
 
 ---
 
@@ -228,8 +229,8 @@ All API routes are served under `/api/trpc` using tRPC.
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
-cd squad-master-sports
+git clone https://github.com/ashwin24121995/squadmaster.git
+cd squadmaster
 
 # Install dependencies
 pnpm install
@@ -255,79 +256,57 @@ The app will be available at `http://localhost:3000`.
 
 ## Vercel Deployment
 
+### How It Works
+
+This project is configured for Vercel with a **hybrid architecture**:
+
+- **Frontend (SPA):** Vite builds the React app to `dist/public/`. Vercel serves these as static files.
+- **Backend (Serverless):** The `api/index.ts` file exports an Express app that Vercel runs as a serverless function. All `/api/*` requests are routed to this function.
+- **Data Storage:** On Vercel, JSON files are stored in `/tmp/` (ephemeral). The app auto-detects the Vercel environment and switches storage paths.
+
 ### Step 1: Push to GitHub
 
 ```bash
-# Initialize git (if not already)
 git init
 git add .
 git commit -m "Initial commit - Squad Master Sports"
-
-# Create a GitHub repo and push
-gh repo create squad-master-sports --public --push --source=.
-# OR manually:
-git remote add origin https://github.com/YOUR_USERNAME/squad-master-sports.git
+git remote add origin https://github.com/YOUR_USERNAME/squadmaster.git
 git push -u origin main
 ```
 
 ### Step 2: Import to Vercel
 
-1. Go to [vercel.com](https://vercel.com) and sign in
+1. Go to [vercel.com](https://vercel.com) and sign in with GitHub
 2. Click **"Add New Project"**
-3. Import your GitHub repository
-4. Configure the project:
+3. Import your **squadmaster** repository
+4. Vercel will auto-detect the settings from `vercel.json`. If not, configure manually:
 
-| Setting              | Value                                                    |
-|----------------------|----------------------------------------------------------|
-| **Framework Preset** | Other                                                    |
-| **Build Command**    | `pnpm build`                                             |
-| **Output Directory** | `dist/public`                                            |
-| **Install Command**  | `pnpm install`                                           |
+| Setting              | Value              |
+|----------------------|--------------------|
+| **Framework Preset** | Other              |
+| **Build Command**    | `pnpm build`       |
+| **Output Directory** | `dist/public`      |
+| **Install Command**  | `pnpm install`     |
 
 ### Step 3: Set Environment Variables
 
-In Vercel's project settings → Environment Variables, add:
+In Vercel → Project Settings → Environment Variables, add:
 
-| Key          | Value                        |
-|--------------|------------------------------|
-| `JWT_SECRET` | (generate a strong random string, e.g., `openssl rand -hex 32`) |
-| `NODE_ENV`   | `production`                 |
+| Key          | Value                                                    |
+|--------------|----------------------------------------------------------|
+| `JWT_SECRET` | (generate a strong random string: `openssl rand -hex 32`) |
 
-### Step 4: Configure Vercel for Express Backend
+### Step 4: Deploy
 
-Since this project uses an Express server (not a static site), you need to configure Vercel to run it as a serverless function. Create a `vercel.json` file in the project root:
+Click **"Deploy"**. Vercel will:
+1. Install dependencies (`pnpm install`)
+2. Build the frontend (`vite build`) and bundle the server (`esbuild`)
+3. Deploy static files from `dist/public/`
+4. Create a serverless function from `api/index.ts`
 
-```json
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "dist/index.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "dist/public/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "dist/index.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "dist/public/$1"
-    }
-  ]
-}
-```
+Your site will be live at `https://your-project.vercel.app`.
 
-### Step 5: Deploy
-
-Click **"Deploy"** in Vercel. Your site will be live at `https://your-project.vercel.app`.
-
-### Step 6: Custom Domain
+### Step 5: Custom Domain
 
 1. In Vercel → Project Settings → Domains
 2. Add `squadmastersports.com`
@@ -335,11 +314,15 @@ Click **"Deploy"** in Vercel. Your site will be live at `https://your-project.ve
    - **A Record:** `76.76.21.21`
    - **CNAME:** `cname.vercel-dns.com`
 
-### Important Notes for Vercel
+### Troubleshooting Vercel
 
-- **File Storage:** Vercel serverless functions have ephemeral filesystems. The JSON file storage will reset on each deployment. For persistent data, consider migrating to a cloud database (e.g., Supabase, PlanetScale, or Vercel Postgres).
-- **Static Data:** The frontend static data (matches, players, etc.) is bundled in the client and works perfectly on Vercel.
-- **Authentication:** JWT-based auth works on Vercel — just ensure `JWT_SECRET` is set in environment variables.
+| Issue | Solution |
+|-------|----------|
+| **NOT_FOUND error** | Ensure `vercel.json` is in the project root with correct rewrites |
+| **API calls fail** | Check that `/api/trpc` routes are working — visit `/api/health` to test |
+| **Auth not working** | Ensure `JWT_SECRET` is set in Vercel environment variables |
+| **Data resets** | Expected on Vercel — `/tmp` is ephemeral. Use a cloud database for persistence |
+| **Build fails** | Run `pnpm build` locally first to catch errors |
 
 ---
 

@@ -74,3 +74,4 @@
 - [x] Clean up package.json — remove Manus-specific dev dependencies
 - [x] Write comprehensive README.md with Vercel deployment instructions
 - [x] Ensure project is fully Vercel-compatible (vercel.json created)
+- [x] Fix vercel.json to resolve NOT_FOUND deployment error (set framework to vite, simplify rewrites, remove legacy config)

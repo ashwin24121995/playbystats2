@@ -2,10 +2,17 @@ import fs from "fs";
 import path from "path";
 
 // ─── File-based JSON storage ────────────────────────────────────────────────
-// All data is stored in JSON files under server/data/
-// This replaces MySQL/Drizzle and makes the app fully portable.
+// All data is stored in JSON files.
+// On Vercel (serverless), uses /tmp directory since the filesystem is read-only.
+// Locally, uses server/data/ directory.
+// NOTE: On Vercel, /tmp is ephemeral — data resets between cold starts.
+// For persistent data in production, consider using a cloud database.
 
-const DATA_DIR = path.resolve(import.meta.dirname, "data");
+const IS_VERCEL = process.env.VERCEL === "1" || !!process.env.VERCEL_URL;
+
+const DATA_DIR = IS_VERCEL
+  ? path.resolve("/tmp", "squad-master-data")
+  : path.resolve(import.meta.dirname, "data");
 
 // Ensure data directory exists
 if (!fs.existsSync(DATA_DIR)) {
