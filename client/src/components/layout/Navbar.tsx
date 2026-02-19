@@ -26,9 +26,9 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 shrink-0">
             <img 
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663073602365/PhzuDMLrzdbZaUzI.png" 
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663073602365/iiNrUjqtKpHLVtsd.png" 
               alt="Play By Stats Logo" 
-              className="h-12 w-auto"
+              className="h-10 w-auto"
             />
           </Link>
 

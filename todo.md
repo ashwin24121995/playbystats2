@@ -91,3 +91,5 @@
 - [x] Update favicon in HTML
 - [x] Create new sporty and energetic logo for Play By Stats
 - [x] Update logo in header, footer, and favicon
+- [x] Create new logo with dark colors visible on white header background
+- [x] Update logo in header, footer, and favicon

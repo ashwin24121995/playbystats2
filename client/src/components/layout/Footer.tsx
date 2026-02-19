@@ -34,9 +34,9 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
               <img 
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663073602365/PhzuDMLrzdbZaUzI.png" 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663073602365/iiNrUjqtKpHLVtsd.png" 
                 alt="Play By Stats Logo" 
-                className="h-12 w-auto"
+                className="h-10 w-auto invert"
               />
             </div>
             <p className="text-sm text-background/60 leading-relaxed mb-5">
