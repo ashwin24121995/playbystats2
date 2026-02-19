@@ -26,15 +26,10 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 shrink-0">
             <img 
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663073602365/FtGsxjmQYaYfmtAs.png" 
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663073602365/PhzuDMLrzdbZaUzI.png" 
               alt="Play By Stats Logo" 
-              className="h-10 w-auto"
+              className="h-12 w-auto"
             />
-            <div className="flex flex-col">
-              <span className="text-lg font-bold leading-tight tracking-tight" style={{ fontFamily: "var(--font-heading)" }}>
-                Play By Stats
-              </span>
-            </div>
           </Link>
 
           {/* Desktop Nav */}

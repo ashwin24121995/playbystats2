@@ -89,3 +89,5 @@
 - [x] Generate favicon for Play By Stats brand
 - [x] Update logo in header and footer
 - [x] Update favicon in HTML
+- [x] Create new sporty and energetic logo for Play By Stats
+- [x] Update logo in header, footer, and favicon
