@@ -51,7 +51,7 @@ export default function Login() {
               Welcome Back
             </h1>
             <p className="text-muted-foreground">
-              Sign in to your Squad Master Sports account
+              Sign in to your Play By Stats account
             </p>
           </div>
 

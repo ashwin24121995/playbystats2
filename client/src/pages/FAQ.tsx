@@ -15,7 +15,7 @@ export default function FAQ() {
         <div className="container text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <h1 className="text-3xl md:text-4xl font-bold mb-3" style={{ fontFamily: "var(--font-heading)" }}>Frequently Asked Questions</h1>
-            <p className="text-white/70 max-w-xl mx-auto">Find answers to the most common questions about Squad Master Sports.</p>
+            <p className="text-white/70 max-w-xl mx-auto">Find answers to the most common questions about Play By Stats.</p>
           </motion.div>
         </div>
       </section>

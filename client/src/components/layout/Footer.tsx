@@ -33,15 +33,14 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center shadow-md">
-                <Trophy className="w-5 h-5 text-white" />
-              </div>
+              <img 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663073602365/FtGsxjmQYaYfmtAs.png" 
+                alt="Play By Stats Logo" 
+                className="h-10 w-auto"
+              />
               <div className="flex flex-col">
                 <span className="text-lg font-bold leading-tight text-white" style={{ fontFamily: "var(--font-heading)" }}>
-                  Squad Master
-                </span>
-                <span className="text-[10px] font-medium text-background/50 uppercase tracking-widest leading-none">
-                  Sports
+                  Play By Stats
                 </span>
               </div>
             </div>
@@ -49,9 +48,9 @@ export default function Footer() {
               India's free cricket entertainment platform. Build your team, compete with friends, and track your performance. 100% free forever. For entertainment purposes only.
             </p>
             <div className="space-y-2.5">
-              <a href="mailto:support@squadmastersports.com" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
+              <a href="mailto:support@playbystats.com" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
                 <Mail className="w-4 h-4 shrink-0" />
-                support@squadmastersports.com
+                support@playbystats.com
               </a>
               <a href="tel:18000005533" className="flex items-center gap-2 text-sm text-background/60 hover:text-background transition-colors">
                 <Phone className="w-4 h-4 shrink-0" />
@@ -119,7 +118,7 @@ export default function Footer() {
         <div className="container py-5">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-xs text-background/40 text-center md:text-left">
-              © {new Date().getFullYear()} Squad Master Sports. All rights reserved. This platform is for entertainment purposes only.
+              © {new Date().getFullYear()} Play By Stats. All rights reserved. This platform is for entertainment purposes only.
             </p>
             <div className="flex items-center gap-4">
               <span className="text-xs text-background/40">100% Free Platform</span>
@@ -131,7 +130,7 @@ export default function Footer() {
           </div>
           <div className="mt-3 pt-3 border-t border-background/5">
             <p className="text-[11px] text-background/30 text-center leading-relaxed">
-              Squad Master Sports is a free-to-play cricket entertainment platform. No real money is involved. 
+              Play By Stats is a free-to-play cricket entertainment platform. No real money is involved. 
               There are no entry fees, deposits, or cash prizes. This platform is designed purely for fun and entertainment.
             </p>
           </div>

@@ -29,7 +29,7 @@ export default function About() {
               Cricket Entertainment for <span className="text-yellow-400">Everyone</span>
             </h1>
             <p className="text-lg text-white/70 leading-relaxed max-w-2xl mx-auto">
-              Squad Master Sports is India's free cricket entertainment platform, built with a mission to make cricket fun accessible to every cricket enthusiast — completely free of charge.
+              Play By Stats is India's free cricket entertainment platform, built with a mission to make cricket fun accessible to every cricket enthusiast — completely free of charge.
             </p>
           </motion.div>
         </div>
@@ -46,10 +46,10 @@ export default function About() {
                   A Team of Cricket Enthusiasts
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Squad Master Sports was created by a passionate team of cricket lovers who believe that every fan deserves the opportunity to experience the joy of building their own team and competing with others — without having to worry about money.
+                  Play By Stats was created by a passionate team of cricket lovers who believe that every fan deserves the opportunity to experience the joy of building their own team and competing with others — without having to worry about money.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Our platform is designed to be educational, entertaining, and community-driven. Whether you're a seasoned cricket analyst or a newcomer to the sport, Squad Master Sports provides the tools and resources you need to enjoy cricket entertainment.
+                  Our platform is designed to be educational, entertaining, and community-driven. Whether you're a seasoned cricket analyst or a newcomer to the sport, Play By Stats provides the tools and resources you need to enjoy cricket entertainment.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   We are committed to keeping this platform 100% free forever. There are no hidden charges, no premium tiers, and no in-app purchases. Every feature is available to every user from day one.

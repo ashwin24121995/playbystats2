@@ -64,7 +64,7 @@ export default function Register() {
               Create Your Account
             </h1>
             <p className="text-muted-foreground">
-              Join Squad Master Sports — it's completely free
+              Join Play By Stats — it's completely free
             </p>
           </div>
 

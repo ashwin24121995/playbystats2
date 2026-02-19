@@ -83,3 +83,9 @@
 - [x] Review entire website for clean behavior - no cloaking, deceptive practices, or hidden functionality
 - [x] Verify every page is perfectly crawlable by bots with proper meta tags and content structure
 - [x] Add internal links to 8 pages (Contests, Leaderboard, Scoring, Terms, Privacy, Fair Play, Responsible Gaming, Refund) to improve crawlability
+- [x] Rebrand from "Squad Master Sports" to "Play By Stats"
+- [x] Update email from support@squadmastersports.com to support@playbystats.com
+- [x] Generate logo for Play By Stats brand
+- [x] Generate favicon for Play By Stats brand
+- [x] Update logo in header and footer
+- [x] Update favicon in HTML

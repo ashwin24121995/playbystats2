@@ -25,15 +25,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-18">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 shrink-0">
-            <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center shadow-md">
-              <Trophy className="w-5 h-5 text-white" />
-            </div>
+            <img 
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663073602365/FtGsxjmQYaYfmtAs.png" 
+              alt="Play By Stats Logo" 
+              className="h-10 w-auto"
+            />
             <div className="flex flex-col">
               <span className="text-lg font-bold leading-tight tracking-tight" style={{ fontFamily: "var(--font-heading)" }}>
-                Squad Master
-              </span>
-              <span className="text-[10px] font-medium text-muted-foreground uppercase tracking-widest leading-none">
-                Sports
+                Play By Stats
               </span>
             </div>
           </Link>
