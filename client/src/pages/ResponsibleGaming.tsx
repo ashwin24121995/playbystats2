@@ -25,7 +25,7 @@ export default function ResponsibleGaming() {
                 <Heart className="w-6 h-6 text-green-600 shrink-0 mt-0.5" />
                 <div>
                   <h2 className="text-lg font-bold text-green-900 mb-2" style={{ fontFamily: "var(--font-heading)" }}>100% Free Platform</h2>
-                  <p className="text-sm text-green-800 leading-relaxed">Play By Stats is a completely free platform. There are no entry fees, no deposits, no real money prizes, and no in-app purchases. Our platform is designed purely for entertainment purposes. We believe that cricket entertainment should be accessible to everyone without any cost.</p>
+                  <p className="text-sm text-green-800 leading-relaxed">StrikePlay is a completely free platform. There are no entry fees, no deposits, no real money prizes, and no in-app purchases. Our platform is designed purely for entertainment purposes. We believe that cricket entertainment should be accessible to everyone without any cost.</p>
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@ export default function ResponsibleGaming() {
 
               <div>
                 <h2 className="text-xl font-bold text-foreground mb-3" style={{ fontFamily: "var(--font-heading)" }}>Self-Exclusion</h2>
-                <p>If you feel that you need a break from the platform, you can request a temporary or permanent self-exclusion by contacting our support team at <strong className="text-foreground">support@playbystats.com</strong>. We will process your request promptly and restrict access to your account for the requested period.</p>
+                <p>If you feel that you need a break from the platform, you can request a temporary or permanent self-exclusion by contacting our support team at <strong className="text-foreground">support@strikeplayhq.com</strong>. We will process your request promptly and restrict access to your account for the requested period.</p>
               </div>
 
               <div className="p-5 rounded-xl bg-amber-50 border border-amber-100">
@@ -75,7 +75,7 @@ export default function ResponsibleGaming() {
                   <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
                   <div>
                     <h3 className="text-base font-semibold text-amber-900 mb-1" style={{ fontFamily: "var(--font-heading)" }}>Need Help?</h3>
-                    <p className="text-sm text-amber-800">If you have any concerns about your usage of the platform, please reach out to us. You can contact us at support@playbystats.com for guidance and support.</p>
+                    <p className="text-sm text-amber-800">If you have any concerns about your usage of the platform, please reach out to us. You can contact us at support@strikeplayhq.com for guidance and support.</p>
                   </div>
                 </div>
               </div>

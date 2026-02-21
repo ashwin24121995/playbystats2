@@ -64,7 +64,7 @@ export default function Register() {
               Create Your Account
             </h1>
             <p className="text-muted-foreground">
-              Join Play By Stats — it's completely free
+              Join StrikePlay — it's completely free
             </p>
           </div>
 

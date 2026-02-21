@@ -20,7 +20,7 @@ export default function Privacy() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="space-y-8 text-sm leading-relaxed text-muted-foreground">
             <div>
               <h2 className="text-xl font-bold text-foreground mb-3" style={{ fontFamily: "var(--font-heading)" }}>1. Introduction</h2>
-              <p>Play By Stats ("we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website playbystats.com and use our services. Please read this policy carefully.</p>
+              <p>StrikePlay ("we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website strikeplayhq.com and use our services. Please read this policy carefully.</p>
             </div>
 
             <div>
@@ -70,7 +70,7 @@ export default function Privacy() {
                 <li><strong className="text-foreground">Right to Data Portability:</strong> You can request your data in a structured, machine-readable format.</li>
                 <li><strong className="text-foreground">Right to Object:</strong> You can object to certain types of data processing.</li>
               </ul>
-              <p className="mt-2">To exercise any of these rights, please contact us at support@playbystats.com.</p>
+              <p className="mt-2">To exercise any of these rights, please contact us at support@strikeplayhq.com.</p>
             </div>
 
             <div>
@@ -122,9 +122,9 @@ export default function Privacy() {
               <h2 className="text-xl font-bold text-foreground mb-3" style={{ fontFamily: "var(--font-heading)" }}>11. Contact Us</h2>
               <p>If you have any questions about this Privacy Policy, please contact us at:</p>
               <ul className="list-none mt-2 space-y-1">
-                <li><strong className="text-foreground">Email:</strong> support@playbystats.com</li>
+                <li><strong className="text-foreground">Email:</strong> support@strikeplayhq.com</li>
                 <li><strong className="text-foreground">Phone:</strong> 1800-000-5533</li>
-                <li><strong className="text-foreground">Website:</strong> playbystats.com</li>
+                <li><strong className="text-foreground">Website:</strong> strikeplayhq.com</li>
                 <li><strong className="text-foreground">Address:</strong> 3rd Floor, Crystal Point Mall, Link Road, Andheri West, Mumbai, Maharashtra 400053, India</li>
               </ul>
             </div>

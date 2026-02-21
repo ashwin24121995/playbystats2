@@ -47,7 +47,7 @@ export default function Contact() {
                 <h2 className="text-xl font-bold mb-5" style={{ fontFamily: "var(--font-heading)" }}>Get in Touch</h2>
                 <div className="space-y-4">
                   {[
-                    { icon: Mail, label: "Email Support", value: "support@playbystats.com", href: "mailto:support@playbystats.com" },
+                    { icon: Mail, label: "Email Support", value: "support@strikeplayhq.com", href: "mailto:support@strikeplayhq.com" },
                     { icon: Phone, label: "Phone Support", value: "1800-000-5533", href: "tel:18000005533" },
                     { icon: MapPin, label: "Location", value: "3rd Floor, Crystal Point Mall, Link Road, Andheri West, Mumbai, Maharashtra 400053, India", href: undefined },
                     { icon: Clock, label: "Response Time", value: "Within 24 hours", href: undefined },

@@ -1,4 +1,4 @@
-# Play By Stats
+# StrikePlay
 
 **India's Free Cricket Entertainment Platform** — a fully independent, production-ready web application for cricket enthusiasts. Build teams, join contests, climb leaderboards, and enjoy the game. 100% free, for entertainment purposes only.
 
@@ -25,7 +25,7 @@
 
 ## Overview
 
-Play By Stats is a cricket entertainment platform where users can:
+StrikePlay is a cricket entertainment platform where users can:
 
 - Browse upcoming, live, and completed cricket matches
 - Build teams of 11 players within a 100-credit budget
@@ -269,7 +269,7 @@ This project is configured for Vercel with a **hybrid architecture**:
 ```bash
 git init
 git add .
-git commit -m "Initial commit - Play By Stats"
+git commit -m "Initial commit - StrikePlay"
 git remote add origin https://github.com/YOUR_USERNAME/play-by-stats.git
 git push -u origin main
 ```
@@ -309,7 +309,7 @@ Your site will be live at `https://your-project.vercel.app`.
 ### Step 5: Custom Domain
 
 1. In Vercel → Project Settings → Domains
-2. Add `playbystats.com`
+2. Add `strikeplayhq.com`
 3. Update your domain's DNS records as instructed by Vercel:
    - **A Record:** `76.76.21.21`
    - **CNAME:** `cname.vercel-dns.com`

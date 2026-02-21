@@ -12,7 +12,7 @@ export default function HowToPlay() {
         <div className="container text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <h1 className="text-3xl md:text-4xl font-bold mb-3" style={{ fontFamily: "var(--font-heading)" }}>How to Play</h1>
-            <p className="text-white/70 max-w-xl mx-auto">Your complete guide to building winning teams and competing on Play By Stats.</p>
+            <p className="text-white/70 max-w-xl mx-auto">Your complete guide to building winning teams and competing on StrikePlay.</p>
           </motion.div>
         </div>
       </section>

@@ -389,7 +389,7 @@ export default function Home() {
               Frequently Asked Questions
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              Everything you need to know about Play By Stats.
+              Everything you need to know about StrikePlay.
             </p>
           </motion.div>
 
@@ -430,7 +430,7 @@ export default function Home() {
                   Entertainment Purpose Only
                 </h3>
                 <p className="text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                  Play By Stats is a completely free-to-play cricket entertainment platform. 
+                  StrikePlay is a completely free-to-play cricket entertainment platform. 
                   We do not charge any entry fees, deposits, or subscription costs. There are no real money prizes or cash rewards. 
                   All features are designed purely for fun and entertainment. Enjoy the game responsibly.
                 </p>

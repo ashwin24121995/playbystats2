@@ -25,7 +25,7 @@ export default function FairPlay() {
                 <Shield className="w-6 h-6 text-primary shrink-0 mt-0.5" />
                 <div>
                   <h2 className="text-lg font-bold mb-2" style={{ fontFamily: "var(--font-heading)" }}>Our Commitment</h2>
-                  <p className="text-sm text-muted-foreground leading-relaxed">Play By Stats is committed to providing a fair, transparent, and enjoyable experience for all users. We employ multiple measures to ensure that every player competes on a level playing field. Our platform is built on the principles of integrity, fairness, and sportsmanship.</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">StrikePlay is committed to providing a fair, transparent, and enjoyable experience for all users. We employ multiple measures to ensure that every player competes on a level playing field. Our platform is built on the principles of integrity, fairness, and sportsmanship.</p>
                 </div>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function FairPlay() {
 
               <div>
                 <h2 className="text-xl font-bold text-foreground mb-3" style={{ fontFamily: "var(--font-heading)" }}>Reporting Violations</h2>
-                <p>If you suspect any user of violating our Fair Play Policy, please report it to us at <strong className="text-foreground">support@playbystats.com</strong>. All reports are investigated confidentially, and we take appropriate action based on our findings.</p>
+                <p>If you suspect any user of violating our Fair Play Policy, please report it to us at <strong className="text-foreground">support@strikeplayhq.com</strong>. All reports are investigated confidentially, and we take appropriate action based on our findings.</p>
               </div>
 
               {/* Internal Links for SEO */}

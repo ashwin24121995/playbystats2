@@ -1,4 +1,4 @@
-# Play By Stats - Project TODO
+# StrikePlay - Project TODO
 
 ## Static Data & Types
 - [x] Static match data, player data, contest data, leaderboard data
@@ -83,21 +83,26 @@
 - [x] Review entire website for clean behavior - no cloaking, deceptive practices, or hidden functionality
 - [x] Verify every page is perfectly crawlable by bots with proper meta tags and content structure
 - [x] Add internal links to 8 pages (Contests, Leaderboard, Scoring, Terms, Privacy, Fair Play, Responsible Gaming, Refund) to improve crawlability
-- [x] Rebrand from "Squad Master Sports" to "Play By Stats"
-- [x] Update email from support@squadmastersports.com to support@playbystats.com
-- [x] Generate logo for Play By Stats brand
-- [x] Generate favicon for Play By Stats brand
+- [x] Rebrand from "Squad Master Sports" to "StrikePlay"
+- [x] Update email from support@squadmastersports.com to support@strikeplayhq.com
+- [x] Generate logo for StrikePlay brand
+- [x] Generate favicon for StrikePlay brand
 - [x] Update logo in header and footer
 - [x] Update favicon in HTML
-- [x] Create new sporty and energetic logo for Play By Stats
+- [x] Create new sporty and energetic logo for StrikePlay
 - [x] Update logo in header, footer, and favicon
 - [x] Create new logo with dark colors visible on white header background
 - [x] Update logo in header, footer, and favicon
 - [x] Convert all PNG logos to WebP format
 - [x] Move logos to project public folder (not Manus CDN)
 - [x] Update all logo references to use local WebP files
-- [x] Verify all brand names are "Play By Stats" everywhere (no old brand references)
+- [x] Verify all brand names are "StrikePlay" everywhere (no old brand references)
 - [x] Search and remove all remaining manuscdn.com references from the project
 - [x] Remove 100% of all Manus references from codebase (code, comments, env, config)
 - [x] Create new GitHub repository playbystats2 (user renamed it)
 - [x] Update all repository references in README and documentation
+- [x] Rebrand from Play By Stats to StrikePlay
+- [x] Generate new StrikePlay logo and favicon
+- [x] Update all brand name references to StrikePlay
+- [x] Update domain references to strikeplayhq.com
+- [x] Update meta tags and SEO content

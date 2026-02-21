@@ -183,15 +183,15 @@ export const scoringRules: ScoringRule[] = [
 // ─── FAQs ────────────────────────────────────────────────────────────────────
 
 export const faqs: FAQ[] = [
-  { question: "What is Play By Stats?", answer: "Play By Stats is India's free cricket entertainment platform where you can build your cricket team, compete with friends, and track your performance. It is 100% free forever with no hidden costs, deposits, or entry fees. The platform is designed purely for fun and entertainment." },
-  { question: "Is it really free to play?", answer: "Yes, absolutely! Play By Stats is completely free. There are no entry fees, no premium subscriptions, no in-app purchases, and no virtual currency. All features are unlocked for every user from day one." },
+  { question: "What is StrikePlay?", answer: "StrikePlay is India's free cricket entertainment platform where you can build your cricket team, compete with friends, and track your performance. It is 100% free forever with no hidden costs, deposits, or entry fees. The platform is designed purely for fun and entertainment." },
+  { question: "Is it really free to play?", answer: "Yes, absolutely! StrikePlay is completely free. There are no entry fees, no premium subscriptions, no in-app purchases, and no virtual currency. All features are unlocked for every user from day one." },
   { question: "How do I create a team?", answer: "After signing up, browse the available matches, select a match, and start building your team. You get 100 credits to select 11 players from both teams. Choose a Captain (2x points) and Vice-Captain (1.5x points) to maximize your score." },
   { question: "How are points calculated?", answer: "Points are calculated based on real match performances. Batsmen earn points for runs, boundaries, and milestones. Bowlers earn points for wickets and maiden overs. Fielders earn points for catches, stumpings, and run-outs. Visit our Scoring System page for full details." },
   { question: "Can I join multiple contests for the same match?", answer: "Yes! You can create multiple teams and join different contests for the same match. Each contest has its own leaderboard and rankings." },
-  { question: "Is this an entertainment platform?", answer: "Yes. Play By Stats is a free-to-play cricket entertainment platform. No real money is involved at any stage. There are no entry fees, no deposits, and no cash prizes. It is designed purely for fun and entertainment." },
-  { question: "What is the minimum age to play?", answer: "You must be at least 18 years old to register and use Play By Stats. Age verification may be required." },
-  { question: "How do I contact support?", answer: "You can reach us through our Contact page or email us at support@playbystats.com. Our support team typically responds within 24 hours." },
-  { question: "Can I play on mobile?", answer: "Yes! Play By Stats is fully responsive and works perfectly on all devices — mobile phones, tablets, and desktops. No app download is required." },
+  { question: "Is this an entertainment platform?", answer: "Yes. StrikePlay is a free-to-play cricket entertainment platform. No real money is involved at any stage. There are no entry fees, no deposits, and no cash prizes. It is designed purely for fun and entertainment." },
+  { question: "What is the minimum age to play?", answer: "You must be at least 18 years old to register and use StrikePlay. Age verification may be required." },
+  { question: "How do I contact support?", answer: "You can reach us through our Contact page or email us at support@strikeplayhq.com. Our support team typically responds within 24 hours." },
+  { question: "Can I play on mobile?", answer: "Yes! StrikePlay is fully responsive and works perfectly on all devices — mobile phones, tablets, and desktops. No app download is required." },
   { question: "How do I become a better player?", answer: "Check out our How to Play guide and educational resources. Study player form, pitch conditions, and head-to-head records. Practice regularly and learn from the leaderboard toppers' strategies." },
 ];
 

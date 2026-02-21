@@ -21,13 +21,13 @@ export default function Terms() {
             <div className="space-y-8 text-sm leading-relaxed text-muted-foreground">
               <div>
                 <h2 className="text-xl font-bold text-foreground mb-3" style={{ fontFamily: "var(--font-heading)" }}>1. Introduction</h2>
-                <p>Welcome to Play By Stats ("Platform", "we", "us", or "our"). These Terms and Conditions ("Terms") govern your use of our website located at playbystats.com and all related services. By accessing or using our Platform, you agree to be bound by these Terms. If you do not agree with any part of these Terms, you must not use our Platform.</p>
-                <p className="mt-2">Play By Stats is a free-to-play cricket entertainment platform. We do not charge any entry fees, deposits, or subscription costs. All features on our Platform are available free of charge and are designed purely for entertainment purposes.</p>
+                <p>Welcome to StrikePlay ("Platform", "we", "us", or "our"). These Terms and Conditions ("Terms") govern your use of our website located at strikeplayhq.com and all related services. By accessing or using our Platform, you agree to be bound by these Terms. If you do not agree with any part of these Terms, you must not use our Platform.</p>
+                <p className="mt-2">StrikePlay is a free-to-play cricket entertainment platform. We do not charge any entry fees, deposits, or subscription costs. All features on our Platform are available free of charge and are designed purely for entertainment purposes.</p>
               </div>
 
               <div>
                 <h2 className="text-xl font-bold text-foreground mb-3" style={{ fontFamily: "var(--font-heading)" }}>2. Eligibility</h2>
-                <p>To use Play By Stats, you must:</p>
+                <p>To use StrikePlay, you must:</p>
                 <ul className="list-disc pl-6 mt-2 space-y-1">
                   <li>Be at least 18 years of age.</li>
                   <li>Have a valid email address for registration.</li>
@@ -42,7 +42,7 @@ export default function Terms() {
 
               <div>
                 <h2 className="text-xl font-bold text-foreground mb-3" style={{ fontFamily: "var(--font-heading)" }}>4. Free Platform Policy</h2>
-                <p>Play By Stats is a 100% free platform. We do not:</p>
+                <p>StrikePlay is a 100% free platform. We do not:</p>
                 <ul className="list-disc pl-6 mt-2 space-y-1">
                   <li>Charge any entry fees or deposits for contests.</li>
                   <li>Offer real money prizes or cash rewards.</li>
@@ -54,7 +54,7 @@ export default function Terms() {
 
               <div>
                 <h2 className="text-xl font-bold text-foreground mb-3" style={{ fontFamily: "var(--font-heading)" }}>5. Entertainment Purpose</h2>
-                <p>Play By Stats is an entertainment platform. The platform allows users to build cricket teams, join free contests, and track performance based on real cricket match outcomes. All activities on this platform are for fun and entertainment only. No financial transactions are involved.</p>
+                <p>StrikePlay is an entertainment platform. The platform allows users to build cricket teams, join free contests, and track performance based on real cricket match outcomes. All activities on this platform are for fun and entertainment only. No financial transactions are involved.</p>
               </div>
 
               <div>
@@ -72,7 +72,7 @@ export default function Terms() {
 
               <div>
                 <h2 className="text-xl font-bold text-foreground mb-3" style={{ fontFamily: "var(--font-heading)" }}>7. Intellectual Property</h2>
-                <p>All content on Play By Stats, including but not limited to text, graphics, logos, icons, images, and software, is the property of Play By Stats or its licensors and is protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works from our content without prior written consent.</p>
+                <p>All content on StrikePlay, including but not limited to text, graphics, logos, icons, images, and software, is the property of StrikePlay or its licensors and is protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works from our content without prior written consent.</p>
               </div>
 
               <div>
@@ -82,7 +82,7 @@ export default function Terms() {
 
               <div>
                 <h2 className="text-xl font-bold text-foreground mb-3" style={{ fontFamily: "var(--font-heading)" }}>9. Limitation of Liability</h2>
-                <p>To the maximum extent permitted by law, Play By Stats shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the Platform.</p>
+                <p>To the maximum extent permitted by law, StrikePlay shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the Platform.</p>
               </div>
 
               <div>
@@ -118,9 +118,9 @@ export default function Terms() {
                 <h2 className="text-xl font-bold text-foreground mb-3" style={{ fontFamily: "var(--font-heading)" }}>12. Contact Us</h2>
                 <p>If you have any questions about these Terms, please contact us at:</p>
                 <ul className="list-none mt-2 space-y-1">
-                  <li><strong className="text-foreground">Email:</strong> support@playbystats.com</li>
+                  <li><strong className="text-foreground">Email:</strong> support@strikeplayhq.com</li>
                   <li><strong className="text-foreground">Phone:</strong> 1800-000-5533</li>
-                  <li><strong className="text-foreground">Website:</strong> playbystats.com</li>
+                  <li><strong className="text-foreground">Website:</strong> strikeplayhq.com</li>
                   <li><strong className="text-foreground">Address:</strong> 3rd Floor, Crystal Point Mall, Link Road, Andheri West, Mumbai, Maharashtra 400053, India</li>
                 </ul>
               </div>
